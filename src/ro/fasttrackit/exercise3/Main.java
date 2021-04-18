@@ -18,6 +18,7 @@ public class Main {
 		person.add(new Employee("Mihai", 41, "welder"));
 		person.add(new Employee("Bianca", 30, "carpenter"));
 		person.add(new Employee("Iancu", 55, "plumber"));
+		person.add(new Employee("Sorin", 48, "welder"));
 
 		System.out.println("Manager:");
 		for (Employee all : person) {
@@ -27,7 +28,13 @@ public class Main {
 		}
 		System.out.println("Plumber:");
 		for (Employee all : person) {
-			if (all.getPosition().equals("plumber")){
+			if (all.getPosition().equals("welder")) {
+				System.out.println(all.getName());
+			}
+		}
+		System.out.println("Age:");
+		for (Employee all : person) {
+			if (all.getAge() > 50) {
 				System.out.println(all.getName());
 			}
 		}
