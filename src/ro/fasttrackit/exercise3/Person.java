@@ -1,59 +1,18 @@
 package ro.fasttrackit.exercise3;
 
-public class Person implements Company {
-	private final String name;
-	private final int age;
-	private String position;
-	private String profession;
+/*Create a Person(name, age, position).
+Create an object that models a Company 1 manager, the rest are welders, carpenters, plumbers.
+- getManager(): Person                          - checks all persons and returns the one with position "manager"
+- getPersons(String profession):List<Person>    - returns all the persons that have the received profession
+- getPersonsOlder(int age): List<Person>        - returns all the persons that are older than received age
+- getPerson(String filterName):List<Person>     - returns all the persons that have names that contains the received string
+- employ(Person)                                - employs a person. Adds it to the list of persons*/
 
-	public Person(String name, int age, String position, String profession) {
-		this.name = name;
-		this.age = age;
-		this.position = position;
-		this.profession = profession;
-	}
+public interface Person {
+	String getName();
 
-	public String getName() {
-		return name;
-	}
+	int getAge();
 
-	public int getAge() {
-		return age;
-	}
+	String getPosition();
 
-	public String getPosition() {
-		return position;
-	}
-
-	public void setPosition(String position) {
-		this.position = position;
-	}
-
-	public String getProfession() {
-		return profession;
-	}
-
-	public void setProfession(String profession) {
-		this.profession = profession;
-	}
-
-	@Override
-	public String getManager() {
-		return this.position;
-	}
-
-	@Override
-	public String getPersons() {
-		return this.profession;
-	}
-
-	@Override
-	public String getPersonsOlder() {
-		return this.name;
-	}
-
-	@Override
-	public String getPerson() {
-		return this.name;
-	}
 }
