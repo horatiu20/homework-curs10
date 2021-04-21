@@ -10,6 +10,6 @@ public class Main {
 		Bouquet bouquet = new Bouquet();
 		System.out.println(bouquet.getAll());
 		System.out.println(bouquet.addFlower("daisy"));
-		System.out.println(bouquet.removeFlower());
+		System.out.println(bouquet.removeFlower("lily"));
 	}
 }

@@ -16,8 +16,8 @@ public class Bouquet {
 		return flowers;
 	}
 
-	public Set<String> removeFlower() {
-		flowers.remove("lily");
+	public Set<String> removeFlower(String flower) {
+		flowers.remove(flower);
 		return flowers;
 	}
 }
