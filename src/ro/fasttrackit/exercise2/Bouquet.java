@@ -7,17 +7,17 @@ import java.util.Set;
 public class Bouquet {
 	public final Set<String> flowers = new HashSet<>(List.of("rose", "tulip", "lily", "lavender"));
 
-	public void getAll() {
-		System.out.println(flowers);
+	public Set<String> getAll() {
+		return flowers;
 	}
 
-	public void addFlower() {
-		flowers.add("daisy");
-		System.out.println(flowers);
+	public Set<String> addFlower(String flower) {
+		flowers.add(flower);
+		return flowers;
 	}
 
-	public void removeFlower() {
+	public Set<String> removeFlower() {
 		flowers.remove("lily");
-		System.out.println(flowers);
+		return flowers;
 	}
 }

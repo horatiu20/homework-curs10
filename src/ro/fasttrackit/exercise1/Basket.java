@@ -34,9 +34,9 @@ public class Basket {
 		return distinctElements;
 	}
 
-	public void addFruit() {
+	public List<String> addFruit() {
 		fruits.add(0, "avocado");
-		System.out.println(fruits);
+		return fruits;
 	}
 
 	public int count() {

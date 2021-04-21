@@ -16,7 +16,7 @@ public class Main {
 		System.out.println(basket.remove("pear"));
 		System.out.println(basket.position("banana"));
 		System.out.println(basket.distinct());
-		basket.addFruit();
+		System.out.println(basket.addFruit());
 		System.out.println(basket.count());
 		System.out.println(basket.customCount());
 	}

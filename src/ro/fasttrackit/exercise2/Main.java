@@ -8,8 +8,8 @@ c) remove(String)                - removes a flower*/
 public class Main {
 	public static void main(String[] args) {
 		Bouquet bouquet = new Bouquet();
-		bouquet.getAll();
-		bouquet.addFlower();
-		bouquet.removeFlower();
+		System.out.println(bouquet.getAll());
+		System.out.println(bouquet.addFlower("daisy"));
+		System.out.println(bouquet.removeFlower());
 	}
 }
